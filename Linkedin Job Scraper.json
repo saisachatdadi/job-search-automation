@@ -1,0 +1,3763 @@
+{
+  "name": "Linkedin Job Scraper",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -512,
+        0
+      ],
+      "id": "c615d90e-d409-423f-8b06-5130f7c16420",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "operation": "Run actor and get dataset",
+        "actorId": {
+          "__rl": true,
+          "value": "hKByXkMQaC5Qt9UMN",
+          "mode": "list",
+          "cachedResultName": "Linkedin Jobs Scraper (curious_coder/linkedin-jobs-scraper)",
+          "cachedResultUrl": "https://console.apify.com/actors/hKByXkMQaC5Qt9UMN/input"
+        },
+        "customBody": "={\n  \"count\": 100,\n  \"scrapeCompany\": true,\n  \"splitByLocation\": false,\n  \"splitCountry\": \"IE\",\n  \"urls\": [\"{{ $json['Linkedin Search URL'] }}\"]\n}",
+        "authentication": "apifyOAuth2Api"
+      },
+      "type": "@apify/n8n-nodes-apify.apify",
+      "typeVersion": 1,
+      "position": [
+        512,
+        0
+      ],
+      "id": "9d24b7ba-2ee9-4222-b1d1-f1ed4c77e2f0",
+      "name": "Scrape Jobs",
+      "alwaysOutputData": false,
+      "credentials": {
+        "apifyOAuth2Api": {
+          "id": "WZMsZEDKEwsIEPlc",
+          "name": "Apify account job"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "Run actor and get dataset",
+        "actorId": {
+          "__rl": true,
+          "value": "hKByXkMQaC5Qt9UMN",
+          "mode": "list",
+          "cachedResultName": "Linkedin Jobs Scraper (curious_coder/linkedin-jobs-scraper)",
+          "cachedResultUrl": "https://console.apify.com/actors/hKByXkMQaC5Qt9UMN/input"
+        },
+        "customBody": "={\n  \"count\": 100,\n  \"scrapeCompany\": true,\n  \"splitByLocation\": false,\n  \"splitCountry\": \"IE\",\n  \"urls\": [\"{{ $json['Linkedin Search URL '] }}\"]\n}",
+        "timeout": {},
+        "authentication": "apifyOAuth2Api"
+      },
+      "type": "@apify/n8n-nodes-apify.apify",
+      "typeVersion": 1,
+      "position": [
+        512,
+        -432
+      ],
+      "id": "d2c2dbc8-795b-457b-a136-b1e26013f038",
+      "name": "Scrape Jobs1",
+      "credentials": {
+        "apifyOAuth2Api": {
+          "id": "WZMsZEDKEwsIEPlc",
+          "name": "Apify account job"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "Run actor and get dataset",
+        "actorId": {
+          "__rl": true,
+          "value": "hKByXkMQaC5Qt9UMN",
+          "mode": "list",
+          "cachedResultName": "Linkedin Jobs Scraper (curious_coder/linkedin-jobs-scraper)",
+          "cachedResultUrl": "https://console.apify.com/actors/hKByXkMQaC5Qt9UMN/input"
+        },
+        "customBody": "={\n  \"count\": 100,\n  \"scrapeCompany\": true,\n  \"splitByLocation\": false,\n  \"splitCountry\": \"IE\",\n  \"urls\": [\"{{ $json['Linkedin Search URL'] }}\"]\n}",
+        "timeout": {},
+        "authentication": "apifyOAuth2Api"
+      },
+      "type": "@apify/n8n-nodes-apify.apify",
+      "typeVersion": 1,
+      "position": [
+        528,
+        464
+      ],
+      "id": "6ab7c571-8bd9-4663-99ce-77447b990c3f",
+      "name": "Scrape Jobs2",
+      "credentials": {
+        "apifyOAuth2Api": {
+          "id": "WZMsZEDKEwsIEPlc",
+          "name": "Apify account job"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "Run actor and get dataset",
+        "actorId": {
+          "__rl": true,
+          "value": "hKByXkMQaC5Qt9UMN",
+          "mode": "list",
+          "cachedResultName": "Linkedin Jobs Scraper (curious_coder/linkedin-jobs-scraper)",
+          "cachedResultUrl": "https://console.apify.com/actors/hKByXkMQaC5Qt9UMN/input"
+        },
+        "customBody": "={\n  \"count\": 100,\n  \"scrapeCompany\": true,\n  \"splitByLocation\": false,\n  \"splitCountry\": \"IE\",\n  \"urls\": [\"{{ $json['Linkedin Search URL'] }}\"]\n}",
+        "timeout": {},
+        "authentication": "apifyOAuth2Api"
+      },
+      "type": "@apify/n8n-nodes-apify.apify",
+      "typeVersion": 1,
+      "position": [
+        528,
+        -816
+      ],
+      "id": "e0ac343e-4526-4499-a72f-c0727bd64e95",
+      "name": "Scrape Jobs3",
+      "credentials": {
+        "apifyOAuth2Api": {
+          "id": "WZMsZEDKEwsIEPlc",
+          "name": "Apify account job"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "Run actor and get dataset",
+        "actorId": {
+          "__rl": true,
+          "value": "hKByXkMQaC5Qt9UMN",
+          "mode": "list",
+          "cachedResultName": "Linkedin Jobs Scraper (curious_coder/linkedin-jobs-scraper)",
+          "cachedResultUrl": "https://console.apify.com/actors/hKByXkMQaC5Qt9UMN/input"
+        },
+        "customBody": "={\n  \"count\": 100,\n  \"scrapeCompany\": true,\n  \"splitByLocation\": false,\n  \"splitCountry\": \"IE\",\n  \"urls\": [\"{{ $json['Linkedin Search URL '] }}\"]\n}",
+        "timeout": {},
+        "authentication": "apifyOAuth2Api"
+      },
+      "type": "@apify/n8n-nodes-apify.apify",
+      "typeVersion": 1,
+      "position": [
+        544,
+        976
+      ],
+      "id": "745e2dfc-fcfe-42d2-aae7-3d731a086f45",
+      "name": "Scrape Jobs4",
+      "credentials": {
+        "apifyOAuth2Api": {
+          "id": "WZMsZEDKEwsIEPlc",
+          "name": "Apify account job"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "66910420-ba40-4dea-89a9-8015e575cfcc",
+              "name": "Linkedin Search URL ",
+              "value": "https://www.linkedin.com/jobs/search/?currentJobId=4387874792&f_E=2&f_TPR=r86400&geoId=105178154&keywords=analyst&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        208,
+        -432
+      ],
+      "id": "3a53d22f-9905-439c-b30c-b4e6c829e808",
+      "name": "Job Search URL Analyst",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "66910420-ba40-4dea-89a9-8015e575cfcc",
+              "name": "Linkedin Search URL",
+              "value": "https://www.linkedin.com/jobs/search/?currentJobId=4385480482&f_E=2&f_TPR=r86400&geoId=105178154&keywords=junior%20project%20manager&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        224,
+        -816
+      ],
+      "id": "55d84058-415b-48f3-8cdf-34691e958e79",
+      "name": "Job Search URL Junior Project Manager",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "66910420-ba40-4dea-89a9-8015e575cfcc",
+              "name": "Linkedin Search URL ",
+              "value": "https://www.linkedin.com/jobs/search/?currentJobId=4385480482&f_E=2&f_TPR=r86400&geoId=105178154&keywords=project%20support%20officer&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        240,
+        976
+      ],
+      "id": "a5cdb5fd-2375-4410-87c0-3b903073e243",
+      "name": "Job Search URL project support officer",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        880,
+        -1200
+      ],
+      "id": "e4ae8ac2-0613-4a09-a8cb-e465c647b243",
+      "name": "Loop Over Items5"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "documentURL": "https://docs.google.com/document/d/1HkOXhEj-JJ9QD8e6wkQzqcDU9mbxpAFsmfujFbVq1wE/edit?tab=t.0"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1152,
+        -1184
+      ],
+      "id": "e5c74ed1-46ec-4a82-ae0a-cd5533e760d6",
+      "name": "Get CV5",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\n\nreturn items.map((item, index) => {\n  const output = item.json.output?.[0] || {};\n  const content0 = output.content?.[0] || {};\n  const raw = content0.text || '{}';\n\n  let parsed;\n  try {\n    parsed = JSON.parse(raw);\n  } catch (error) {\n    parsed = { verdict: null };\n  }\n\n  const verdict =\n    typeof parsed.verdict === 'string'\n      ? parsed.verdict.toLowerCase() === 'true'\n      : parsed.verdict;\n\n  return {\n    json: {\n      index,\n      message: {\n        role: output.role || 'assistant',\n        content: {\n          verdict: verdict\n        },\n        refusal: null,\n        annotations: content0.annotations || [],\n        logprobs: content0.logprobs || null,\n        finish_reason: output.status === 'completed' ? 'stop' : output.status\n      }\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1696,
+        -1184
+      ],
+      "id": "fa1dc48b-2e45-4ee1-a021-9d34adb7c50b",
+      "name": "Code in JavaScript5"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a helpful, intelligent job filtering assistant"
+            },
+            {
+              "content": "=#Overview\nI'm looking for jobs. Your task is to filter them based on a list of\nattributions, skills, Qualifications and certifications as per the CV that I have. Some jobs may not be relevant, which is\nwhy I want you to go through each one of them and let me know whether or not\nI'm a fit based on the JD.\nFocus only on roles tht are technical in terms of business analysis roles and any sector as long as previous experience within the sector isn't required for project management roles.\n\n##Context\n\nBelow is my resume\n\n{{$json.content}}\n\n##Job description.\n\n{{ $('Scrape Jobs7').item.json.descriptionText }}\n\nRespond in this Json format:\n\n{\"verdict\":\"true or false\",\"reason\":\"reasonforverdict\"}\n\nIf I'm a fit return true\nIf I'm not a fit return false"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1376,
+        -1184
+      ],
+      "id": "5369adb1-09ea-4ef3-905e-fb77e46d09d7",
+      "name": "checks relavence5",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "d2d1b052-b6dc-4ae1-8e8e-1998dd3c6525",
+              "leftValue": "={{ $json.message.content.verdict }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.3,
+      "position": [
+        1088,
+        -1360
+      ],
+      "id": "2f6d49c0-e193-4858-b94d-79c743507b5c",
+      "name": "Filter5"
+    },
+    {
+      "parameters": {
+        "operation": "Run actor and get dataset",
+        "actorId": {
+          "__rl": true,
+          "value": "hKByXkMQaC5Qt9UMN",
+          "mode": "list",
+          "cachedResultName": "Linkedin Jobs Scraper (curious_coder/linkedin-jobs-scraper)",
+          "cachedResultUrl": "https://console.apify.com/actors/hKByXkMQaC5Qt9UMN/input"
+        },
+        "customBody": "={\n  \"count\": 100,\n  \"scrapeCompany\": true,\n  \"splitByLocation\": false,\n  \"splitCountry\": \"IE\",\n  \"urls\": [\"{{ $json['Linkedin Search URL'] }}\"]\n}",
+        "timeout": {},
+        "authentication": "apifyOAuth2Api"
+      },
+      "type": "@apify/n8n-nodes-apify.apify",
+      "typeVersion": 1,
+      "position": [
+        544,
+        1424
+      ],
+      "id": "406a6b96-f08e-4c1c-989a-0c47ac03553b",
+      "name": "Scrape Jobs6",
+      "credentials": {
+        "apifyOAuth2Api": {
+          "id": "WZMsZEDKEwsIEPlc",
+          "name": "Apify account job"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "66910420-ba40-4dea-89a9-8015e575cfcc",
+              "name": "Linkedin Search URL",
+              "value": "https://www.linkedin.com/jobs/search/?currentJobId=4387861573&f_E=2&f_TPR=r86400&geoId=105178154&keywords=impleentation%20coordinator&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        240,
+        1424
+      ],
+      "id": "05220738-fc80-41f3-97c7-492622de4183",
+      "name": "Job Search URL Implementation coordinator",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are helpful, intelligent resume writing assistant that drafts high converting resumes based on jobs.\n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Do not output any backticks (no ```). Your first characters should be <html>\n"
+            },
+            {
+              "content": "=You are an expert Irish recruiter + ATS resume writer. Your job: tailor my CV ONLY for Junior Project Manager / Project Coordinator roles in Ireland.\n\nInputs: \nJob Description (JD):\n\n{{ $('Scrape Jobs7').item.json.descriptionText }}\n\nMy current CV\n\n{{ $('Get CV5').item.json.content }}\n\nGOALS:\nOutput an ATS-optimized, ready-to-paste ONE-PAGE CV (no tables, no icons, no columns) with clean headings.\nMaximize interview conversion by aligning language to the JD, using exact keywords where truthful.\nMake the tone “why hire me” (delivery + coordination + governance + stakeholder management), not a task list.\nKeep everything fact-based. DO NOT invent new skills.\nIf the JD requests tools/frameworks I don’t have, DO NOT claim them. Instead add a “Currently learning” line under Tools.\nPreserve my Work Authorization: Stamp 1G and Dublin location.\nPROCESS YOU MUST FOLLOW:\n1) Add a “TOOLS” line that is accurate\nOnly list tools explicitly in my CV.\nIf JD mentions tools I don’t have (e.g., MS Project, Jira, Asana, Trello, Monday.com, Smartsheet, Power BI), add:\nCurrently learning: [Tool name] (online course)\nDo NOT claim Agile/PRINCE2/Scrum unless explicitly stated in my CV.\n2) Mention The address same as the locality of the job being applied for\n3) Rewrite my CV into this structure (ONE PAGE ONLY)\nName\n(alter the location based on where the Job is situated), Ireland | Phone | Email | LinkedIn | Stamp 1G\nJunior Project Manager | Project Coordination | Stakeholder Management | Delivery Support | Stamp 1G\nProfessional Summary (2–3 lines max)\nMust include:\nProject support / coordination exposure\nStakeholder communication\nReporting & tracking\nRisk / issue management awareness\nDelivery support experience\nGovernance or documentation strength\nTone: delivery-focused, structured, reliable.\nSkills (Grouped Using JD Keywords)\nProject Delivery & Coordination\nProject planning support\nTask tracking\nTimeline monitoring\nRAID log maintenance\nMeeting coordination\nAction tracking\nGovernance & Reporting\nStatus reporting\nKPI tracking\nDocumentation management\nRisk & issue logging\nChange request support\nStakeholder & Communication\nCross-functional collaboration\nWorkshop support\nRequirements documentation\nClient communication\nEscalation support\nTools (Only what I actually have + Currently learning line if required)\nExperience (Reverse Chronological)\nFor each role:\n5–6 bullets max\nEach bullet must follow this structure:\nAction + Scope/Scale + Tool (if applicable) + Outcome/Control/Delivery impact\nUse PM-focused language where truthful:\nExamples of JD-aligned phrasing:\n“Supported end-to-end project delivery”\n“Coordinated cross-functional stakeholders”\n“Maintained RAID logs”\n“Tracked project milestones”\n“Prepared weekly status reports”\n“Supported sprint planning”\n“Assisted in UAT coordination”\n“Managed documentation repository”\n“Monitored project KPIs”\n“Ensured delivery against timelines”\nFocus on:\nCoordination\nStructure\nGovernance\nDelivery reliability\nVisibility & reporting\nAvoid sounding like a pure BA or operations profile — position toward delivery.\nEducation\nInclude:\nDegree\n3–5 relevant modules aligned to JD (e.g., Project Management, Operations Management, Business Analysis, Risk Management, Agile Methods)\nProjects / Awards (Max 2 lines total, only if relevant)\nInclude:\nAcademic or professional project coordination exposure\nLeadership in delivery\nProcess improvement initiatives\nCertifications (Clean format)\nExamples if applicable:\nPRINCE2 Foundation\nCAPM\nScrum Master\nAgile Fundamentals\nIf not certified, do NOT imply certification.\nCONSTRAINTS:\nDo not exceed one page.\nNo fluff words (e.g., passionate, motivated).\nUse delivery-focused, governance-driven tone.\nDo not claim PM tools unless explicitly stated.\nKeep formatting simple with bold section headings only.\nUse Irish/UK terminology where appropriate (stakeholders, programme, governance, deliverables, etc.).\n\nMake sure to Respond with only the customized, updated resume—nothing else.\n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Make sure the HTML formatting is done properly just as in the original cv you got including the colours, headers, placement of the skills section, tools etc.\n\n\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1328,
+        -1360
+      ],
+      "id": "c2cc73d5-5618-480d-a512-b59012e53a6d",
+      "name": "customise resume",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "folderId": "default",
+        "title": "=SaiSachatDadi_Cv {{ $('Scrape Jobs7').item.json.companyName }}"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1712,
+        -1360
+      ],
+      "id": "a036eb11-b1d0-4144-a429-e30aea2ff5bb",
+      "name": "Create a document",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://www.googleapis.com/upload/drive/v3/files/{{ $json.id }}?uploadType=media",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "googleDocsOAuth2Api",
+        "sendHeaders": true,
+        "specifyHeaders": "json",
+        "jsonHeaders": "{\n\"Content-Type\": \"text/html\"\n}\n",
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "text/html",
+        "body": "={{ $('customise resume').item.json.output[0].content[0].text }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        2000,
+        -1360
+      ],
+      "id": "01a46dbf-001e-40de-84fb-af04154742bf",
+      "name": "HTTP Request",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0",
+          "mode": "list",
+          "cachedResultName": "JOBS TRACKER DB",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Job Post Link": "={{ $('Scrape Jobs7').item.json.link }}",
+            "Job Title": "={{ $('Scrape Jobs7').item.json.title }}",
+            "Company Name": "={{ $('Scrape Jobs7').item.json.companyName }}",
+            "Salary": "={{ $('Scrape Jobs7').item.json.salaryInfo[0] }}",
+            "Seniority level": "={{ $('Scrape Jobs7').item.json.seniorityLevel }}",
+            "Company Website": "={{ $('Scrape Jobs7').item.json.companyLinkedinUrl }}",
+            "Description": "={{ $('Scrape Jobs7').item.json.descriptionText }}",
+            "No. of Applicants": "={{ $('Scrape Jobs7').item.json.applicantsCount }}",
+            "Resume URL": "=https://docs.google.com/document/d/{{ $('Create a document').item.json.id }}/edit",
+            "Application URL": "={{ $('Scrape Jobs7').item.json.applyUrl }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Job Post Link",
+              "displayName": "Job Post Link",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Job Title",
+              "displayName": "Job Title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Seniority level",
+              "displayName": "Seniority level",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Name",
+              "displayName": "Company Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Website",
+              "displayName": "Company Website",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Salary",
+              "displayName": "Salary",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Description",
+              "displayName": "Description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "No. of Applicants",
+              "displayName": "No. of Applicants",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Resume URL",
+              "displayName": "Resume URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Application URL",
+              "displayName": "Application URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        2208,
+        -1360
+      ],
+      "id": "355e99f8-ffed-4ea0-b530-e773c4e6e547",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "awLdV2adqENKgGuU",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        864,
+        -816
+      ],
+      "id": "c38547f9-f8fd-4665-8ec0-23bccd536a6b",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "documentURL": "https://docs.google.com/document/d/1HkOXhEj-JJ9QD8e6wkQzqcDU9mbxpAFsmfujFbVq1wE/edit?tab=t.0"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1136,
+        -800
+      ],
+      "id": "a62a223e-30bd-464d-bb38-fec7838df71a",
+      "name": "Get CV",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\n\nreturn items.map((item, index) => {\n  const output = item.json.output?.[0] || {};\n  const content0 = output.content?.[0] || {};\n  const raw = content0.text || '{}';\n\n  let parsed;\n  try {\n    parsed = JSON.parse(raw);\n  } catch (error) {\n    parsed = { verdict: null };\n  }\n\n  const verdict =\n    typeof parsed.verdict === 'string'\n      ? parsed.verdict.toLowerCase() === 'true'\n      : parsed.verdict;\n\n  return {\n    json: {\n      index,\n      message: {\n        role: output.role || 'assistant',\n        content: {\n          verdict: verdict\n        },\n        refusal: null,\n        annotations: content0.annotations || [],\n        logprobs: content0.logprobs || null,\n        finish_reason: output.status === 'completed' ? 'stop' : output.status\n      }\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1680,
+        -800
+      ],
+      "id": "6ef9359a-5723-4366-8ddd-2b296f86dd70",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a helpful, intelligent job filtering assistant"
+            },
+            {
+              "content": "=#Overview\nI'm looking for jobs. Your task is to filter them based on a list of\nattributions, skills, Qualifications and certifications as per the CV that I have. Some jobs may not be relevant, which is\nwhy I want you to go through each one of them and let me know whether or not\nI'm a fit based on the JD.\nFocus only on roles tht are technical in terms of business analysis roles and any sector as long as previous experience within the sector isn't required for project management roles.\n\n##Context\n\nBelow is my resume\n\n{{$json.content}}\n\n##Job description.\n\n{{ $('Scrape Jobs3').item.json.descriptionText }}\n\nRespond in this Json format:\n\n{\"verdict\":\"true or false\",\"reason\":\"reasonforverdict\"}\n\nIf I'm a fit return true\nIf I'm not a fit return false"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1360,
+        -800
+      ],
+      "id": "20191a49-7fe1-4f35-a3f4-29f6b668062a",
+      "name": "checks relavence",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "d2d1b052-b6dc-4ae1-8e8e-1998dd3c6525",
+              "leftValue": "={{ $json.message.content.verdict }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.3,
+      "position": [
+        1072,
+        -976
+      ],
+      "id": "1ed307aa-30c9-44fe-b6a6-6d97443faa97",
+      "name": "Filter"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are helpful, intelligent resume writing assistant that drafts high converting resumes based on jobs.\n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Do not output any backticks (no ```). Your first characters should be <html>\n"
+            },
+            {
+              "content": "=You are an expert Irish recruiter + ATS resume writer. Your job: tailor my CV ONLY for Junior Project Manager / Project Coordinator roles in Ireland.\n\nInputs: \nJob Description (JD):\n\n{{ $('Scrape Jobs3').item.json.descriptionText }}\n\nMy current CV\n\n{{ $('Get CV').item.json.content }}\n\nGOALS:\nOutput an ATS-optimized, ready-to-paste ONE-PAGE CV (no tables, no icons, no columns) with clean headings.\nMaximize interview conversion by aligning language to the JD, using exact keywords where truthful.\nMake the tone “why hire me” (delivery + coordination + governance + stakeholder management), not a task list.\nKeep everything fact-based. DO NOT invent new skills.\nIf the JD requests tools/frameworks I don’t have, DO NOT claim them. Instead add a “Currently learning” line under Tools.\nPreserve my Work Authorization: Stamp 1G and Dublin location.\nPROCESS YOU MUST FOLLOW:\n1) Add a “TOOLS” line that is accurate\nOnly list tools explicitly in my CV.\nIf JD mentions tools I don’t have (e.g., MS Project, Jira, Asana, Trello, Monday.com, Smartsheet, Power BI), add:\nCurrently learning: [Tool name] (online course)\nDo NOT claim Agile/PRINCE2/Scrum unless explicitly stated in my CV.\n2) Mention The address same as the locality of the job being applied for\n3) Rewrite my CV into this structure (ONE PAGE ONLY)\nName\n(alter the location based on where the Job is situated), Ireland | Phone | Email | LinkedIn | Stamp 1G\nJunior Project Manager | Project Coordination | Stakeholder Management | Delivery Support | Stamp 1G\nProfessional Summary (2–3 lines max)\nMust include:\nProject support / coordination exposure\nStakeholder communication\nReporting & tracking\nRisk / issue management awareness\nDelivery support experience\nGovernance or documentation strength\nTone: delivery-focused, structured, reliable.\nSkills (Grouped Using JD Keywords)\nProject Delivery & Coordination\nProject planning support\nTask tracking\nTimeline monitoring\nRAID log maintenance\nMeeting coordination\nAction tracking\nGovernance & Reporting\nStatus reporting\nKPI tracking\nDocumentation management\nRisk & issue logging\nChange request support\nStakeholder & Communication\nCross-functional collaboration\nWorkshop support\nRequirements documentation\nClient communication\nEscalation support\nTools (Only what I actually have + Currently learning line if required)\nExperience (Reverse Chronological)\nFor each role:\n5–6 bullets max\nEach bullet must follow this structure:\nAction + Scope/Scale + Tool (if applicable) + Outcome/Control/Delivery impact\nUse PM-focused language where truthful:\nExamples of JD-aligned phrasing:\n“Supported end-to-end project delivery”\n“Coordinated cross-functional stakeholders”\n“Maintained RAID logs”\n“Tracked project milestones”\n“Prepared weekly status reports”\n“Supported sprint planning”\n“Assisted in UAT coordination”\n“Managed documentation repository”\n“Monitored project KPIs”\n“Ensured delivery against timelines”\nFocus on:\nCoordination\nStructure\nGovernance\nDelivery reliability\nVisibility & reporting\nAvoid sounding like a pure BA or operations profile — position toward delivery.\nEducation\nInclude:\nDegree\n3–5 relevant modules aligned to JD (e.g., Project Management, Operations Management, Business Analysis, Risk Management, Agile Methods)\nProjects / Awards (Max 2 lines total, only if relevant)\nInclude:\nAcademic or professional project coordination exposure\nLeadership in delivery\nProcess improvement initiatives\nCertifications (Clean format)\nExamples if applicable:\nPRINCE2 Foundation\nCAPM\nScrum Master\nAgile Fundamentals\nIf not certified, do NOT imply certification.\nCONSTRAINTS:\nDo not exceed one page.\nNo fluff words (e.g., passionate, motivated).\nUse delivery-focused, governance-driven tone.\nDo not claim PM tools unless explicitly stated.\nKeep formatting simple with bold section headings only.\nUse Irish/UK terminology where appropriate (stakeholders, programme, governance, deliverables, etc.).\n\nMake sure to Respond with only the customized, updated resume—nothing else.\n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Make sure the HTML formatting is done properly just as in the original cv you got including the colours, headers, placement of the skills section, tools etc.\n\n\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1312,
+        -976
+      ],
+      "id": "fde22294-f6a8-491e-8584-c6c2f5539aed",
+      "name": "customise resume1",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "folderId": "default",
+        "title": "=SaiSachatDadi_Cv {{ $('Scrape Jobs3').item.json.companyName }}"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1696,
+        -976
+      ],
+      "id": "bc7ef4b7-8774-476f-828e-898ba62acafd",
+      "name": "Create a document1",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://www.googleapis.com/upload/drive/v3/files/{{ $json.id }}?uploadType=media",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "googleDocsOAuth2Api",
+        "sendHeaders": true,
+        "specifyHeaders": "json",
+        "jsonHeaders": "{\n\"Content-Type\": \"text/html\"\n}\n",
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "text/html",
+        "body": "={{ $('customise resume1').item.json.output[0].content[0].text }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1984,
+        -976
+      ],
+      "id": "ac70bd52-755a-40b3-aed8-2f695798ac1d",
+      "name": "HTTP Request1",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        848,
+        -432
+      ],
+      "id": "d21ccaeb-6557-4cc1-a226-fc0a638e13a8",
+      "name": "Loop Over Items6"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "documentURL": "https://docs.google.com/document/d/1HkOXhEj-JJ9QD8e6wkQzqcDU9mbxpAFsmfujFbVq1wE/edit?tab=t.0"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1120,
+        -416
+      ],
+      "id": "67b6f39b-6bc5-4c05-b7ea-871462676930",
+      "name": "Get CV6",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\n\nreturn items.map((item, index) => {\n  const output = item.json.output?.[0] || {};\n  const content0 = output.content?.[0] || {};\n  const raw = content0.text || '{}';\n\n  let parsed;\n  try {\n    parsed = JSON.parse(raw);\n  } catch (error) {\n    parsed = { verdict: null };\n  }\n\n  const verdict =\n    typeof parsed.verdict === 'string'\n      ? parsed.verdict.toLowerCase() === 'true'\n      : parsed.verdict;\n\n  return {\n    json: {\n      index,\n      message: {\n        role: output.role || 'assistant',\n        content: {\n          verdict: verdict\n        },\n        refusal: null,\n        annotations: content0.annotations || [],\n        logprobs: content0.logprobs || null,\n        finish_reason: output.status === 'completed' ? 'stop' : output.status\n      }\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1664,
+        -416
+      ],
+      "id": "9bd2b3f1-582f-43f0-9c07-78a28c7bb403",
+      "name": "Code in JavaScript6"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a helpful, intelligent job filtering assistant"
+            },
+            {
+              "content": "=#Overview\nI'm looking for jobs. Your task is to filter them based on a list of\nattributions, skills, Qualifications and certifications as per the CV that I have. Some jobs may not be relevant, which is\nwhy I want you to go through each one of them and let me know whether or not\nI'm a fit based on the JD.\nFocus only on roles tht are technical in terms of business analysis roles and any sector as long as previous experience within the sector isn't required for project management roles.\n\n##Context\n\nBelow is my resume\n\n{{$json.content}}\n\n##Job description.\n\n{{ $('Scrape Jobs1').item.json.descriptionText }}\n\nRespond in this Json format:\n\n{\"verdict\":\"true or false\",\"reason\":\"reasonforverdict\"}\n\nIf I'm a fit return true\nIf I'm not a fit return false"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1344,
+        -416
+      ],
+      "id": "a109ca0b-0565-4158-8241-228da1826a4d",
+      "name": "checks relavence6",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "d2d1b052-b6dc-4ae1-8e8e-1998dd3c6525",
+              "leftValue": "={{ $json.message.content.verdict }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {
+          "ignoreCase": false
+        }
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.3,
+      "position": [
+        1056,
+        -592
+      ],
+      "id": "a598c5a8-6002-466d-b3e8-59b506516955",
+      "name": "Filter6"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are helpful, intelligent resume writing assistant that drafts high converting resumes based on jobs. \n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Do not output any backticks (no ```). Your first characters should be <html> and always maintain the same format for all the CV's being generated\n"
+            },
+            {
+              "content": "=\nYou are an expert Irish recruiter + ATS resume writer. Your job: tailor my CV ONLY for Analyst roles in Ireland.\n\nINPUTS (I will paste both):\nJob Description (JD)\nMy current CV\n\nGOALS:\nOutput an ATS-optimized, ready-to-paste ONE-PAGE CV (no tables, no icons, no columns) with clean headings.\nMaximize interview conversion by aligning language to the JD, using exact keywords where truthful.\nMake the tone “why hire me” (analysis + problem solving + stakeholder support + reporting + business impact), not a task list.\nKeep everything fact-based. DO NOT invent new skills.\nIf the JD requests tools/frameworks I don’t have, DO NOT claim them. Instead add a “Currently learning” line under Tools.\nPreserve my Work Authorization: Stamp 1G and Dublin location.\n\nPROCESS YOU MUST FOLLOW:\n\n1. Add a “TOOLS” line that is accurate\n   Only list tools explicitly in my CV.\n   If JD mentions tools I don’t have (e.g., Power BI, SQL, Tableau, Excel VBA, Python, SAP, Salesforce, Alteryx, SAS), add:\n   Currently learning: [Tool name] (online course)\n   Do NOT claim Agile/PRINCE2/Scrum unless explicitly stated \n   in my CV.\n   Do NOT claim advanced analytics, modelling, forecasting, or dashboards unless explicitly evidenced in my CV.\n2. Mention The address same as the locality of the job being applied for\n3. Rewrite my CV into this structure (ONE PAGE ONLY)\n\nName\n(alter the location based on where the Job is situated), Ireland | Phone | Email | LinkedIn | Stamp 1G\n\nHeadline:\nAnalyst | Business Analysis | Reporting | Stakeholder Support | Data-Driven Decision Support | Stamp 1G\n\nProfessional Summary (2–3 lines max)\nMust include:\nAnalyst / reporting / business support exposure\nStakeholder communication\nData analysis and reporting\nProblem-solving and insight generation\nDocumentation or process support strength\nBusiness impact awareness\nTone: analytical, structured, reliable, commercially aware.\n\nSkills (Grouped Using JD Keywords)\n\nAnalysis & Insight\nData analysis\nTrend analysis\nKPI monitoring\nInsight generation\nProblem-solving\nDecision support\n\nReporting & Documentation\nReport preparation\nDashboard support\nData validation\nDocumentation management\nProcess documentation\nRequirements documentation\nData accuracy and quality checks\n\nStakeholder & Business Support\nCross-functional collaboration\nStakeholder communication\nWorkshop support\nBusiness support\nClient communication\nEscalation support\nAction tracking\n\nTools (Only what I actually have + Currently learning line if required)\n\nExperience (Reverse Chronological)\n\nFor each role:\n5–6 bullets max\nEach bullet must follow this structure:\nAction + Scope/Scale + Tool (if applicable) + Outcome/Insight/Business impact\n\nUse Analyst-focused language where truthful:\nExamples of JD-aligned phrasing:\n“Analysed business data to identify trends and performance gaps”\n“Prepared weekly and monthly reports for stakeholders”\n“Monitored KPIs and highlighted variances”\n“Supported data validation and reporting accuracy”\n“Documented business requirements and process updates”\n“Coordinated with cross-functional stakeholders to resolve reporting issues”\n“Produced insights to support operational and commercial decisions”\n“Improved reporting visibility through dashboards and structured tracking”\n\nFocus on:\nAnalysis\nReporting\nAccuracy\nInsight generation\nStakeholder support\nBusiness visibility\nDecision support\n\nAvoid sounding like a pure operations or administrative profile — position toward analytical value and reporting impact.\n\nEducation\nInclude:\nDegree\n3–5 relevant modules aligned to JD (e.g., Systems Development and project management, Statistical techniques for Business Analytics, Business Modelling, Applied Analytics in Business and society, Enterprise Systems, Advanced Programming for business analytics, Data Science and Big Data)\n\nProjects / Awards (Max 2 lines total, only if relevant)\nInclude:\nJob application using Workflow automation to summarise and give priliminary feedback weather or not a job is suitable\n\nCertifications (Clean format)\nExamples if applicable:\nPL-300\nGoogle Data Analytics\nMicrosoft Excel Expert\nTableau Desktop Specialist\nSQL for Data Analysis\nIf not certified, do NOT imply certification.\n\nCONSTRAINTS:\nDo not exceed one page.\nNo fluff words (e.g., passionate, motivated).\nUse analytical, business-focused tone.\nDo not claim tools, dashboards, SQL, or BI platforms unless explicitly stated.\nKeep formatting simple with bold section headings only.\nUse Irish/UK terminology where appropriate (stakeholders, programme, governance, deliverables, insights, reporting).\n\n\n\nMake sure to Respond with only the customized, updated resume—nothing else.\n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Make sure the HTML formatting is done properly just as in the original cv you got including the colours, headers, placement of the skills section, tools etc.\n\n\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1296,
+        -592
+      ],
+      "id": "93494922-ae1e-4601-96b8-c0e3bd64b2cb",
+      "name": "customise resume2",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "folderId": "default",
+        "title": "=SaiSachatDadi_Cv {{ $('Scrape Jobs1').item.json.companyName }}"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1680,
+        -592
+      ],
+      "id": "63dd4f47-8646-46e0-8fc4-5aa070a2a58e",
+      "name": "Create a document2",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://www.googleapis.com/upload/drive/v3/files/{{ $json.id }}?uploadType=media",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "googleDocsOAuth2Api",
+        "sendHeaders": true,
+        "specifyHeaders": "json",
+        "jsonHeaders": "{\n\"Content-Type\": \"text/html\"\n}\n",
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "text/html",
+        "body": "={{ $('customise resume2').item.json.output[0].content[0].text }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1968,
+        -592
+      ],
+      "id": "b012ce96-e4c6-49b9-8045-c62d498f00f7",
+      "name": "HTTP Request2",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        848,
+        0
+      ],
+      "id": "c1738aee-8aed-4b83-bf16-685c66da479d",
+      "name": "Loop Over Items7"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "documentURL": "https://docs.google.com/document/d/1HkOXhEj-JJ9QD8e6wkQzqcDU9mbxpAFsmfujFbVq1wE/edit?tab=t.0"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1120,
+        16
+      ],
+      "id": "9e9d4a9a-0ed3-44b9-97b6-0cfcd9fa60e2",
+      "name": "Get CV7",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\n\nreturn items.map((item, index) => {\n  const output = item.json.output?.[0] || {};\n  const content0 = output.content?.[0] || {};\n  const raw = content0.text || '{}';\n\n  let parsed;\n  try {\n    parsed = JSON.parse(raw);\n  } catch (error) {\n    parsed = { verdict: null };\n  }\n\n  const verdict =\n    typeof parsed.verdict === 'string'\n      ? parsed.verdict.toLowerCase() === 'true'\n      : parsed.verdict;\n\n  return {\n    json: {\n      index,\n      message: {\n        role: output.role || 'assistant',\n        content: {\n          verdict: verdict\n        },\n        refusal: null,\n        annotations: content0.annotations || [],\n        logprobs: content0.logprobs || null,\n        finish_reason: output.status === 'completed' ? 'stop' : output.status\n      }\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1664,
+        16
+      ],
+      "id": "2d1c3313-5301-491c-934b-6aca1df01937",
+      "name": "Code in JavaScript7"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a helpful, intelligent job filtering assistant"
+            },
+            {
+              "content": "=#Overview\nI'm looking for jobs. Your task is to filter them based on a list of\nattributions, skills, Qualifications and certifications as per the CV that I have. Some jobs may not be relevant, which is\nwhy I want you to go through each one of them and let me know whether or not\nI'm a fit based on the JD.\nFocus only on roles tht are technical in terms of business analysis roles and any sector as long as previous experience within the sector isn't required for project management roles.\n\n##Context\n\nBelow is my resume\n\n{{$json.content}}\n\n##Job description.\n\n{{ $('Scrape Jobs').item.json.descriptionText }}\n\nRespond in this Json format:\n\n{\"verdict\":\"true or false\",\"reason\":\"reasonforverdict\"}\n\nIf I'm a fit return true\nIf I'm not a fit return false"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1344,
+        16
+      ],
+      "id": "4d62936f-e42a-4eff-a88f-ce226321fc6b",
+      "name": "checks relavence7",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "d2d1b052-b6dc-4ae1-8e8e-1998dd3c6525",
+              "leftValue": "={{ $json.message.content.verdict }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.3,
+      "position": [
+        1056,
+        -160
+      ],
+      "id": "3809c75d-af3b-43d4-920a-c222de5728ae",
+      "name": "Filter7"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are helpful, intelligent resume writing assistant that drafts high converting resumes based on jobs.\n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Do not output any backticks (no ```). Your first characters should be <html> and always maintain the same format for all the CV's being generated\n"
+            },
+            {
+              "content": "=\n\nYou are an expert Irish recruiter + ATS resume writer. Your job: tailor my CV ONLY for Analyst roles in Ireland.\n\nINPUTS (I will paste both):\nJob Description (JD)\nMy current CV\n\nGOALS:\nOutput an ATS-optimized, ready-to-paste ONE-PAGE CV (no tables, no icons, no columns) with clean headings.\nMaximize interview conversion by aligning language to the JD, using exact keywords where truthful.\nMake the tone “why hire me” (analysis + problem solving + stakeholder support + reporting + business impact), not a task list.\nKeep everything fact-based. DO NOT invent new skills.\nIf the JD requests tools/frameworks I don’t have, DO NOT claim them. Instead add a “Currently learning” line under Tools.\nPreserve my Work Authorization: Stamp 1G and Dublin location.\n\nPROCESS YOU MUST FOLLOW:\n\n1. Add a “TOOLS” line that is accurate\n   Only list tools explicitly in my CV.\n   If JD mentions tools I don’t have (e.g., Power BI, SQL, Tableau, Excel VBA, Python, SAP, Salesforce, Alteryx, SAS), add:\n   Currently learning: [Tool name] (online course)\n   Do NOT claim Agile/PRINCE2/Scrum unless explicitly stated \n   in my CV.\n   Do NOT claim advanced analytics, modelling, forecasting, or dashboards unless explicitly evidenced in my CV.\n2. Mention The address same as the locality of the job being applied for\n3. Rewrite my CV into this structure (ONE PAGE ONLY)\n\nName\n(alter the location based on where the Job is situated), Ireland | Phone | Email | LinkedIn | Stamp 1G\n\nHeadline:\nAnalyst | Business Analysis | Reporting | Stakeholder Support | Data-Driven Decision Support | Stamp 1G\n\nProfessional Summary (2–3 lines max)\nMust include:\nAnalyst / reporting / business support exposure\nStakeholder communication\nData analysis and reporting\nProblem-solving and insight generation\nDocumentation or process support strength\nBusiness impact awareness\nTone: analytical, structured, reliable, commercially aware.\n\nSkills (Grouped Using JD Keywords)\n\nAnalysis & Insight\nData analysis\nTrend analysis\nKPI monitoring\nInsight generation\nProblem-solving\nDecision support\n\nReporting & Documentation\nReport preparation\nDashboard support\nData validation\nDocumentation management\nProcess documentation\nRequirements documentation\nData accuracy and quality checks\n\nStakeholder & Business Support\nCross-functional collaboration\nStakeholder communication\nWorkshop support\nBusiness support\nClient communication\nEscalation support\nAction tracking\n\nTools (Only what I actually have + Currently learning line if required)\n\nExperience (Reverse Chronological)\n\nFor each role:\n5–6 bullets max\nEach bullet must follow this structure:\nAction + Scope/Scale + Tool (if applicable) + Outcome/Insight/Business impact\n\nUse Analyst-focused language where truthful:\nExamples of JD-aligned phrasing:\n“Analysed business data to identify trends and performance gaps”\n“Prepared weekly and monthly reports for stakeholders”\n“Monitored KPIs and highlighted variances”\n“Supported data validation and reporting accuracy”\n“Documented business requirements and process updates”\n“Coordinated with cross-functional stakeholders to resolve reporting issues”\n“Produced insights to support operational and commercial decisions”\n“Improved reporting visibility through dashboards and structured tracking”\n\nFocus on:\nAnalysis\nReporting\nAccuracy\nInsight generation\nStakeholder support\nBusiness visibility\nDecision support\n\nAvoid sounding like a pure operations or administrative profile — position toward analytical value and reporting impact.\n\nEducation\nInclude:\nDegree\n3–5 relevant modules aligned to JD (e.g., Systems Development and project management, Statistical techniques for Business Analytics, Business Modelling, Applied Analytics in Business and society, Enterprise Systems, Advanced Programming for business analytics, Data Science and Big Data)\n\nProjects / Awards (Max 2 lines total, only if relevant)\nInclude:\nJob application using Workflow automation to summarise and give priliminary feedback weather or not a job is suitable\n\nCertifications (Clean format)\nExamples if applicable:\nPL-300\nGoogle Data Analytics\nMicrosoft Excel Expert\nTableau Desktop Specialist\nSQL for Data Analysis\nIf not certified, do NOT imply certification.\n\nCONSTRAINTS:\nDo not exceed one page.\nNo fluff words (e.g., passionate, motivated).\nUse analytical, business-focused tone.\nDo not claim tools, dashboards, SQL, or BI platforms unless explicitly stated.\nKeep formatting simple with bold section headings only.\nUse Irish/UK terminology where appropriate (stakeholders, programme, governance, deliverables, insights, reporting).\n----------\n\n\nMake sure to Respond with only the customized, updated resume—nothing else.\n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Make sure the HTML formatting is done properly just as in the original cv you got including the colours, headers, placement of the skills section, tools etc.\n\n\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1296,
+        -160
+      ],
+      "id": "94083afc-e99a-424f-8dba-17fe31e5a285",
+      "name": "customise resume3",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "folderId": "default",
+        "title": "=SaiSachatDadi_Cv {{ $('Scrape Jobs').item.json.companyName }}"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1680,
+        -160
+      ],
+      "id": "6bbc79c7-a321-432c-8b86-3794a1725044",
+      "name": "Create a document3",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://www.googleapis.com/upload/drive/v3/files/{{ $json.id }}?uploadType=media",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "googleDocsOAuth2Api",
+        "sendHeaders": true,
+        "specifyHeaders": "json",
+        "jsonHeaders": "{\n\"Content-Type\": \"text/html\"\n}\n",
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "text/html",
+        "body": "={{ $('customise resume3').item.json.output[0].content[0].text }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1968,
+        -160
+      ],
+      "id": "d4705f72-873a-4ea0-808f-42e9a813be9a",
+      "name": "HTTP Request3",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        832,
+        464
+      ],
+      "id": "4bb67e2f-8b4d-4235-9bee-4d4e9c8b34bd",
+      "name": "Loop Over Items8"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "documentURL": "https://docs.google.com/document/d/1HkOXhEj-JJ9QD8e6wkQzqcDU9mbxpAFsmfujFbVq1wE/edit?tab=t.0"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1104,
+        480
+      ],
+      "id": "73ae498f-d36b-4d64-bbd3-f3ba75dd20dd",
+      "name": "Get CV8",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\n\nreturn items.map((item, index) => {\n  const output = item.json.output?.[0] || {};\n  const content0 = output.content?.[0] || {};\n  const raw = content0.text || '{}';\n\n  let parsed;\n  try {\n    parsed = JSON.parse(raw);\n  } catch (error) {\n    parsed = { verdict: null };\n  }\n\n  const verdict =\n    typeof parsed.verdict === 'string'\n      ? parsed.verdict.toLowerCase() === 'true'\n      : parsed.verdict;\n\n  return {\n    json: {\n      index,\n      message: {\n        role: output.role || 'assistant',\n        content: {\n          verdict: verdict\n        },\n        refusal: null,\n        annotations: content0.annotations || [],\n        logprobs: content0.logprobs || null,\n        finish_reason: output.status === 'completed' ? 'stop' : output.status\n      }\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1648,
+        480
+      ],
+      "id": "f9e99d8e-c0bb-41fd-9ffa-ea071ea6b0e2",
+      "name": "Code in JavaScript8"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a helpful, intelligent job filtering assistant"
+            },
+            {
+              "content": "=#Overview\nI'm looking for jobs. Your task is to filter them based on a list of\nattributions, skills, Qualifications and certifications as per the CV that I have. Some jobs may not be relevant, which is\nwhy I want you to go through each one of them and let me know whether or not\nI'm a fit based on the JD.\nFocus only on roles tht are technical in terms of business analysis roles and any sector as long as previous experience within the sector isn't required for project management roles.\n\n##Context\n\nBelow is my resume\n\n{{$json.content}}\n\n##Job description.\n\n{{ $('Scrape Jobs2').item.json.descriptionText }}\n\nRespond in this Json format:\n\n{\"verdict\":\"true or false\",\"reason\":\"reasonforverdict\"}\n\nIf I'm a fit return true\nIf I'm not a fit return false"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1328,
+        480
+      ],
+      "id": "e36b272e-f961-4b15-98d5-90dca00b1b99",
+      "name": "checks relavence8",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "d2d1b052-b6dc-4ae1-8e8e-1998dd3c6525",
+              "leftValue": "={{ $json.message.content.verdict }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.3,
+      "position": [
+        1040,
+        304
+      ],
+      "id": "d0bad99e-aedc-4129-b57e-65e4489f17d7",
+      "name": "Filter8"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are helpful, intelligent resume writing assistant that drafts high converting resumes based on jobs.\n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Do not output any backticks (no ```). Your first characters should be <html> and always maintain the same format for all the CV's being generated\n"
+            },
+            {
+              "content": "=\n\n\nYou are an expert Irish recruiter + ATS resume writer. Your job: tailor my CV ONLY for Analyst roles in Ireland.\n\nINPUTS (I will paste both):\nJob Description (JD)\nMy current CV\n\nGOALS:\nOutput an ATS-optimized, ready-to-paste ONE-PAGE CV (no tables, no icons, no columns) with clean headings.\nMaximize interview conversion by aligning language to the JD, using exact keywords where truthful.\nMake the tone “why hire me” (analysis + problem solving + stakeholder support + reporting + business impact), not a task list.\nKeep everything fact-based. DO NOT invent new skills.\nIf the JD requests tools/frameworks I don’t have, DO NOT claim them. Instead add a “Currently learning” line under Tools.\nPreserve my Work Authorization: Stamp 1G and Dublin location.\n\nPROCESS YOU MUST FOLLOW:\n\n1. Add a “TOOLS” line that is accurate\n   Only list tools explicitly in my CV.\n   If JD mentions tools I don’t have (e.g., Power BI, SQL, Tableau, Excel VBA, Python, SAP, Salesforce, Alteryx, SAS), add:\n   Currently learning: [Tool name] (online course)\n   Do NOT claim Agile/PRINCE2/Scrum unless explicitly stated \n   in my CV.\n   Do NOT claim advanced analytics, modelling, forecasting, or dashboards unless explicitly evidenced in my CV.\n2. Mention The address same as the locality of the job being applied for\n3. Rewrite my CV into this structure (ONE PAGE ONLY)\n\nName\n(alter the location based on where the Job is situated), Ireland | Phone | Email | LinkedIn | Stamp 1G\n\nHeadline:\nAnalyst | Business Analysis | Reporting | Stakeholder Support | Data-Driven Decision Support | Stamp 1G\n\nProfessional Summary (2–3 lines max)\nMust include:\nAnalyst / reporting / business support exposure\nStakeholder communication\nData analysis and reporting\nProblem-solving and insight generation\nDocumentation or process support strength\nBusiness impact awareness\nTone: analytical, structured, reliable, commercially aware.\n\nSkills (Grouped Using JD Keywords)\n\nAnalysis & Insight\nData analysis\nTrend analysis\nKPI monitoring\nInsight generation\nProblem-solving\nDecision support\n\nReporting & Documentation\nReport preparation\nDashboard support\nData validation\nDocumentation management\nProcess documentation\nRequirements documentation\nData accuracy and quality checks\n\nStakeholder & Business Support\nCross-functional collaboration\nStakeholder communication\nWorkshop support\nBusiness support\nClient communication\nEscalation support\nAction tracking\n\nTools (Only what I actually have + Currently learning line if required)\n\nExperience (Reverse Chronological)\n\nFor each role:\n5–6 bullets max\nEach bullet must follow this structure:\nAction + Scope/Scale + Tool (if applicable) + Outcome/Insight/Business impact\n\nUse Analyst-focused language where truthful:\nExamples of JD-aligned phrasing:\n“Analysed business data to identify trends and performance gaps”\n“Prepared weekly and monthly reports for stakeholders”\n“Monitored KPIs and highlighted variances”\n“Supported data validation and reporting accuracy”\n“Documented business requirements and process updates”\n“Coordinated with cross-functional stakeholders to resolve reporting issues”\n“Produced insights to support operational and commercial decisions”\n“Improved reporting visibility through dashboards and structured tracking”\n\nFocus on:\nAnalysis\nReporting\nAccuracy\nInsight generation\nStakeholder support\nBusiness visibility\nDecision support\n\nAvoid sounding like a pure operations or administrative profile — position toward analytical value and reporting impact.\n\nEducation\nInclude:\nDegree\n3–5 relevant modules aligned to JD (e.g., Systems Development and project management, Statistical techniques for Business Analytics, Business Modelling, Applied Analytics in Business and society, Enterprise Systems, Advanced Programming for business analytics, Data Science and Big Data)\n\nProjects / Awards (Max 2 lines total, only if relevant)\nInclude:\nJob application using Workflow automation to summarise and give priliminary feedback weather or not a job is suitable\n\nCertifications (Clean format)\nExamples if applicable:\nPL-300\nGoogle Data Analytics\nMicrosoft Excel Expert\nTableau Desktop Specialist\nSQL for Data Analysis\nIf not certified, do NOT imply certification.\n\nCONSTRAINTS:\nDo not exceed one page.\nNo fluff words (e.g., passionate, motivated).\nUse analytical, business-focused tone.\nDo not claim tools, dashboards, SQL, or BI platforms unless explicitly stated.\nKeep formatting simple with bold section headings only.\nUse Irish/UK terminology where appropriate (stakeholders, programme, governance, deliverables, insights, reporting).\n----------\n\n\nMake sure to Respond with only the customized, updated resume—nothing else.\n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Make sure the HTML formatting is done properly just as in the original cv you got including the colours, headers, placement of the skills section, tools etc.\n\n\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1280,
+        304
+      ],
+      "id": "4f353039-0722-49b5-b5a3-c27e48a325d0",
+      "name": "customise resume4",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "folderId": "default",
+        "title": "=SaiSachatDadi_Cv {{ $('Scrape Jobs2').item.json.companyName }}"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1664,
+        304
+      ],
+      "id": "934ff714-f524-4018-9990-512cc9681cf9",
+      "name": "Create a document4",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://www.googleapis.com/upload/drive/v3/files/{{ $json.id }}?uploadType=media",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "googleDocsOAuth2Api",
+        "sendHeaders": true,
+        "specifyHeaders": "json",
+        "jsonHeaders": "{\n\"Content-Type\": \"text/html\"\n}\n",
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "text/html",
+        "body": "={{ $('customise resume4').item.json.output[0].content[0].text }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1952,
+        304
+      ],
+      "id": "e17d3861-286d-4cdd-aa23-d706a77d4967",
+      "name": "HTTP Request4",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        832,
+        976
+      ],
+      "id": "2ebd1b21-f40c-4ce9-b885-99c094685f91",
+      "name": "Loop Over Items9"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "documentURL": "https://docs.google.com/document/d/1HkOXhEj-JJ9QD8e6wkQzqcDU9mbxpAFsmfujFbVq1wE/edit?tab=t.0"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1104,
+        992
+      ],
+      "id": "26d23e19-1d69-4568-bc77-4247fcedd4e3",
+      "name": "Get CV9",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\n\nreturn items.map((item, index) => {\n  const output = item.json.output?.[0] || {};\n  const content0 = output.content?.[0] || {};\n  const raw = content0.text || '{}';\n\n  let parsed;\n  try {\n    parsed = JSON.parse(raw);\n  } catch (error) {\n    parsed = { verdict: null };\n  }\n\n  const verdict =\n    typeof parsed.verdict === 'string'\n      ? parsed.verdict.toLowerCase() === 'true'\n      : parsed.verdict;\n\n  return {\n    json: {\n      index,\n      message: {\n        role: output.role || 'assistant',\n        content: {\n          verdict: verdict\n        },\n        refusal: null,\n        annotations: content0.annotations || [],\n        logprobs: content0.logprobs || null,\n        finish_reason: output.status === 'completed' ? 'stop' : output.status\n      }\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1648,
+        992
+      ],
+      "id": "646b6025-9a43-47e3-b43e-737f65af0387",
+      "name": "Code in JavaScript9"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a helpful, intelligent job filtering assistant"
+            },
+            {
+              "content": "=#Overview\nI'm looking for jobs. Your task is to filter them based on a list of\nattributions, skills, Qualifications and certifications as per the CV that I have. Some jobs may not be relevant, which is\nwhy I want you to go through each one of them and let me know whether or not\nI'm a fit based on the JD.\nFocus only on roles tht are technical in terms of business analysis roles and any sector as long as previous experience within the sector isn't required for project management roles.\n\n##Context\n\nBelow is my resume\n\n{{$json.content}}\n\n##Job description.\n\n{{ $('Scrape Jobs4').item.json.descriptionText }}\n\nRespond in this Json format:\n\n{\"verdict\":\"true or false\",\"reason\":\"reasonforverdict\"}\n\nIf I'm a fit return true\nIf I'm not a fit return false"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1328,
+        992
+      ],
+      "id": "805f6960-20c5-4e2d-84a0-b43ff3a45ace",
+      "name": "checks relavence9",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "d2d1b052-b6dc-4ae1-8e8e-1998dd3c6525",
+              "leftValue": "={{ $json.message.content.verdict }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.3,
+      "position": [
+        1040,
+        816
+      ],
+      "id": "b2dac261-4975-4b08-9340-e0d9464f593b",
+      "name": "Filter9"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are helpful, intelligent resume writing assistant that drafts high converting resumes based on jobs.\n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Do not output any backticks (no ```). Your first characters should be <html> and always maintain the same format for all the CV's being generated\n"
+            },
+            {
+              "content": "=\nYou are an expert Irish recruiter + ATS resume writer. Your job: tailor my CV ONLY for Junior Project Manager / Project Coordinator/ Project support officer roles in Ireland.\n\nInputs: \nJob Description (JD):\n\n{{ $('Scrape Jobs4').item.json.descriptionText }}\n\nMy current CV\n\n{{ $('Get CV9').item.json.content }}\n\nGOALS:\nOutput an ATS-optimized, ready-to-paste ONE-PAGE CV (no tables, no icons, no columns) with clean headings.\nMaximize interview conversion by aligning language to the JD, using exact keywords where truthful.\nMake the tone “why hire me” (delivery + coordination + governance + stakeholder management), not a task list.\nKeep everything fact-based. DO NOT invent new skills.\nIf the JD requests tools/frameworks I don’t have, DO NOT claim them. Instead add a “Currently learning” line under Tools.\nPreserve my Work Authorization: Stamp 1G and Dublin location.\nPROCESS YOU MUST FOLLOW:\n1) Add a “TOOLS” line that is accurate\nOnly list tools explicitly in my CV.\nIf JD mentions tools I don’t have (e.g., MS Project, Jira, Asana, Trello, Monday.com, Smartsheet, Power BI), add:\nCurrently learning: [Tool name] (online course)\nDo NOT claim Agile/PRINCE2/Scrum unless explicitly stated in my CV.\n2) Mention The address same as the locality of the job being applied for\n3) Rewrite my CV into this structure (ONE PAGE ONLY)\nName\n(alter the location based on where the Job is situated), Ireland | Phone | Email | LinkedIn | Stamp 1G\nJunior Project Manager | Project Coordination | Stakeholder Management | Delivery Support | Stamp 1G\nProfessional Summary (2–3 lines max)\nMust include:\nProject support / coordination exposure\nStakeholder communication\nReporting & tracking\nRisk / issue management awareness\nDelivery support experience\nGovernance or documentation strength\nTone: delivery-focused, structured, reliable.\nSkills (Grouped Using JD Keywords)\nProject Delivery & Coordination\nProject planning support\nTask tracking\nTimeline monitoring\nRAID log maintenance\nMeeting coordination\nAction tracking\nGovernance & Reporting\nStatus reporting\nKPI tracking\nDocumentation management\nRisk & issue logging\nChange request support\nStakeholder & Communication\nCross-functional collaboration\nWorkshop support\nRequirements documentation\nClient communication\nEscalation support\nTools (Only what I actually have + Currently learning line if required)\nExperience (Reverse Chronological)\nFor each role:\n5–6 bullets max\nEach bullet must follow this structure:\nAction + Scope/Scale + Tool (if applicable) + Outcome/Control/Delivery impact\nUse PM-focused language where truthful:\nExamples of JD-aligned phrasing:\n“Supported end-to-end project delivery”\n“Coordinated cross-functional stakeholders”\n“Maintained RAID logs”\n“Tracked project milestones”\n“Prepared weekly status reports”\n“Supported sprint planning”\n“Assisted in UAT coordination”\n“Managed documentation repository”\n“Monitored project KPIs”\n“Ensured delivery against timelines”\nFocus on:\nCoordination\nStructure\nGovernance\nDelivery reliability\nVisibility & reporting\nAvoid sounding like a pure BA or operations profile — position toward delivery.\nEducation\nInclude:\nDegree\n3–5 relevant modules aligned to JD (e.g., Project Management, Operations Management, Business Analysis, Risk Management, Agile Methods)\nProjects / Awards (Max 2 lines total, only if relevant)\nInclude:\nAcademic or professional project coordination exposure\nLeadership in delivery\nProcess improvement initiatives\nCertifications (Clean format)\nExamples if applicable:\nPRINCE2 Foundation\nCAPM\nScrum Master\nAgile Fundamentals\nIf not certified, do NOT imply certification.\nCONSTRAINTS:\nDo not exceed one page.\nNo fluff words (e.g., passionate, motivated).\nUse delivery-focused, governance-driven tone.\nDo not claim PM tools unless explicitly stated.\nKeep formatting simple with bold section headings only.\nUse Irish/UK terminology where appropriate (stakeholders, programme, governance, deliverables, etc.).\n\n\n\nMake sure to Respond with only the customized, updated resume—nothing else.\n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Make sure the HTML formatting is done properly just as in the original cv you got including the colours, headers, placement of the skills section, tools etc.\n\n\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1280,
+        816
+      ],
+      "id": "bac7f4d5-af8e-45fe-84c5-92eeedfa1a8b",
+      "name": "customise resume5",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "folderId": "default",
+        "title": "=SaiSachatDadi_Cv {{ $('Scrape Jobs4').item.json.companyName }}"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1664,
+        816
+      ],
+      "id": "d3cceb68-2bd6-4adf-a52a-2e7e5cd48590",
+      "name": "Create a document5",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://www.googleapis.com/upload/drive/v3/files/{{ $json.id }}?uploadType=media",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "googleDocsOAuth2Api",
+        "sendHeaders": true,
+        "specifyHeaders": "json",
+        "jsonHeaders": "{\n\"Content-Type\": \"text/html\"\n}\n",
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "text/html",
+        "body": "={{ $('customise resume5').item.json.output[0].content[0].text }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1952,
+        816
+      ],
+      "id": "ab0f1b2a-5ef1-4ea8-aade-bdc41446dc91",
+      "name": "HTTP Request5",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        816,
+        1424
+      ],
+      "id": "190750ea-d2cf-4433-897c-453e28ad5c28",
+      "name": "Loop Over Items10"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "documentURL": "https://docs.google.com/document/d/1HkOXhEj-JJ9QD8e6wkQzqcDU9mbxpAFsmfujFbVq1wE/edit?tab=t.0"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1088,
+        1440
+      ],
+      "id": "71998ed2-bc3f-405e-b49c-45f0d1384e7c",
+      "name": "Get CV10",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\n\nreturn items.map((item, index) => {\n  const output = item.json.output?.[0] || {};\n  const content0 = output.content?.[0] || {};\n  const raw = content0.text || '{}';\n\n  let parsed;\n  try {\n    parsed = JSON.parse(raw);\n  } catch (error) {\n    parsed = { verdict: null };\n  }\n\n  const verdict =\n    typeof parsed.verdict === 'string'\n      ? parsed.verdict.toLowerCase() === 'true'\n      : parsed.verdict;\n\n  return {\n    json: {\n      index,\n      message: {\n        role: output.role || 'assistant',\n        content: {\n          verdict: verdict\n        },\n        refusal: null,\n        annotations: content0.annotations || [],\n        logprobs: content0.logprobs || null,\n        finish_reason: output.status === 'completed' ? 'stop' : output.status\n      }\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1632,
+        1440
+      ],
+      "id": "4117105d-539a-4426-9c1f-2ef42dabb84d",
+      "name": "Code in JavaScript10"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a helpful, intelligent job filtering assistant"
+            },
+            {
+              "content": "=#Overview\nI'm looking for jobs. Your task is to filter them based on a list of\nattributions, skills, Qualifications and certifications as per the CV that I have. Some jobs may not be relevant, which is\nwhy I want you to go through each one of them and let me know whether or not\nI'm a fit based on the JD.\nFocus only on roles tht are technical in terms of business analysis roles and any sector as long as previous experience within the sector isn't required for project management roles.\n\n##Context\n\nBelow is my resume\n\n{{$json.content}}\n\n##Job description.\n\n{{ $('Scrape Jobs6').item.json.descriptionText }}\n\nRespond in this Json format:\n\n{\"verdict\":\"true or false\",\"reason\":\"reasonforverdict\"}\n\nIf I'm a fit return true\nIf I'm not a fit return false"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1312,
+        1440
+      ],
+      "id": "43fb7ba4-c4ba-45d5-97fc-7b05c6de79ee",
+      "name": "checks relavence10",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "d2d1b052-b6dc-4ae1-8e8e-1998dd3c6525",
+              "leftValue": "={{ $json.message.content.verdict }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.3,
+      "position": [
+        1024,
+        1264
+      ],
+      "id": "604893da-9da6-4b35-b997-e3c214c5f46f",
+      "name": "Filter10"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are helpful, intelligent resume writing assistant that drafts high converting resumes based on jobs.\n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Do not output any backticks (no ```). Your first characters should be <html> and always maintain the same format for all the CV's being generated\n"
+            },
+            {
+              "content": "=\nYou are an expert Irish recruiter + ATS resume writer. Your job: tailor my CV ONLY for Junior Project Manager / Project Coordinator/Implementation Coordinator roles in Ireland.\n\nInputs: \nJob Description (JD):\n\n{{ $('Scrape Jobs6').item.json.descriptionText }}\n\nMy current CV\n\n{{ $('Get CV10').item.json.content }}\n\nGOALS:\nOutput an ATS-optimized, ready-to-paste ONE-PAGE CV (no tables, no icons, no columns) with clean headings.\nMaximize interview conversion by aligning language to the JD, using exact keywords where truthful.\nMake the tone “why hire me” (delivery + coordination + governance + stakeholder management), not a task list.\nKeep everything fact-based. DO NOT invent new skills.\nIf the JD requests tools/frameworks I don’t have, DO NOT claim them. Instead add a “Currently learning” line under Tools.\nPreserve my Work Authorization: Stamp 1G and Dublin location.\nPROCESS YOU MUST FOLLOW:\n1) Add a “TOOLS” line that is accurate\nOnly list tools explicitly in my CV.\nIf JD mentions tools I don’t have (e.g., MS Project, Jira, Asana, Trello, Monday.com, Smartsheet, Power BI), add:\nCurrently learning: [Tool name] (online course)\nDo NOT claim Agile/PRINCE2/Scrum unless explicitly stated in my CV.\n2) Mention The address same as the locality of the job being applied for\n3) Rewrite my CV into this structure (ONE PAGE ONLY)\nName\n(alter the location based on where the Job is situated), Ireland | Phone | Email | LinkedIn | Stamp 1G\nJunior Project Manager | Project Coordination | Stakeholder Management | Delivery Support | Stamp 1G\nProfessional Summary (2–3 lines max)\nMust include:\nProject support / coordination exposure\nStakeholder communication\nReporting & tracking\nRisk / issue management awareness\nDelivery support experience\nGovernance or documentation strength\nTone: delivery-focused, structured, reliable.\nSkills (Grouped Using JD Keywords)\nProject Delivery & Coordination\nProject planning support\nTask tracking\nTimeline monitoring\nRAID log maintenance\nMeeting coordination\nAction tracking\nGovernance & Reporting\nStatus reporting\nKPI tracking\nDocumentation management\nRisk & issue logging\nChange request support\nStakeholder & Communication\nCross-functional collaboration\nWorkshop support\nRequirements documentation\nClient communication\nEscalation support\nTools (Only what I actually have + Currently learning line if required)\nExperience (Reverse Chronological)\nFor each role:\n5–6 bullets max\nEach bullet must follow this structure:\nAction + Scope/Scale + Tool (if applicable) + Outcome/Control/Delivery impact\nUse PM-focused language where truthful:\nExamples of JD-aligned phrasing:\n“Supported end-to-end project delivery”\n“Coordinated cross-functional stakeholders”\n“Maintained RAID logs”\n“Tracked project milestones”\n“Prepared weekly status reports”\n“Supported sprint planning”\n“Assisted in UAT coordination”\n“Managed documentation repository”\n“Monitored project KPIs”\n“Ensured delivery against timelines”\nFocus on:\nCoordination\nStructure\nGovernance\nDelivery reliability\nVisibility & reporting\nAvoid sounding like a pure BA or operations profile — position toward delivery.\nEducation\nInclude:\nDegree\n3–5 relevant modules aligned to JD (e.g., Project Management, Operations Management, Business Analysis, Risk Management, Agile Methods)\nProjects / Awards (Max 2 lines total, only if relevant)\nInclude:\nAcademic or professional project coordination exposure\nLeadership in delivery\nProcess improvement initiatives\nCertifications (Clean format)\nExamples if applicable:\nPRINCE2 Foundation\nCAPM\nScrum Master\nAgile Fundamentals\nIf not certified, do NOT imply certification.\nCONSTRAINTS:\nDo not exceed one page.\nNo fluff words (e.g., passionate, motivated).\nUse delivery-focused, governance-driven tone.\nDo not claim PM tools unless explicitly stated.\nKeep formatting simple with bold section headings only.\nUse Irish/UK terminology where appropriate (stakeholders, programme, governance, deliverables, etc.).\n\n\nMake sure to Respond with only the customized, updated resume—nothing else.\n\nThis resume will be added to a Google Doc, so write it in HTML format that I can easily copy/paste. Make sure the HTML formatting is done properly just as in the original cv you got including the colours, headers, placement of the skills section, tools etc.\n\n\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1264,
+        1264
+      ],
+      "id": "2bbeac0c-5329-4f15-b243-298a09258e80",
+      "name": "customise resume6",
+      "credentials": {
+        "openAiApi": {
+          "id": "w7Q7UVxXwtbOBO5t",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "folderId": "default",
+        "title": "=SaiSachatDadi_Cv {{ $('Scrape Jobs6').item.json.companyName }}"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1648,
+        1264
+      ],
+      "id": "7fe7f85c-735e-43bc-aeed-140198ba0711",
+      "name": "Create a document6",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "=https://www.googleapis.com/upload/drive/v3/files/{{ $json.id }}?uploadType=media",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "googleDocsOAuth2Api",
+        "sendHeaders": true,
+        "specifyHeaders": "json",
+        "jsonHeaders": "{\n\"Content-Type\": \"text/html\"\n}\n",
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "text/html",
+        "body": "={{ $('customise resume6').item.json.output[0].content[0].text }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1936,
+        1264
+      ],
+      "id": "ae4bac09-6270-43d0-9e1c-1cd634e883d5",
+      "name": "HTTP Request6",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "mWgq7IRgRFL1Wmup",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "Run actor and get dataset",
+        "actorId": {
+          "__rl": true,
+          "value": "hKByXkMQaC5Qt9UMN",
+          "mode": "list",
+          "cachedResultName": "Linkedin Jobs Scraper (curious_coder/linkedin-jobs-scraper)",
+          "cachedResultUrl": "https://console.apify.com/actors/hKByXkMQaC5Qt9UMN/input"
+        },
+        "customBody": "={\n  \"count\": 100,\n  \"scrapeCompany\": true,\n  \"splitByLocation\": false,\n  \"splitCountry\": \"IE\",\n  \"urls\": [\"{{ $json['Linkedin Search URL '] }}\"]\n}",
+        "authentication": "apifyOAuth2Api"
+      },
+      "type": "@apify/n8n-nodes-apify.apify",
+      "typeVersion": 1,
+      "position": [
+        528,
+        -1200
+      ],
+      "id": "f6274993-fef2-4054-ac2f-d499a6e27f14",
+      "name": "Scrape Jobs7",
+      "credentials": {
+        "apifyOAuth2Api": {
+          "id": "WZMsZEDKEwsIEPlc",
+          "name": "Apify account job"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "66910420-ba40-4dea-89a9-8015e575cfcc",
+              "name": "Linkedin Search URL",
+              "value": "https://www.linkedin.com/jobs/search/?currentJobId=4387858753&f_E=2&f_TPR=r86400&geoId=105178154&keywords=opperations%20coordinator&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "72f05877-b74b-48a0-bb44-3b3bcd0a9b86",
+      "name": "Job Search URL Opperations coordinator",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "66910420-ba40-4dea-89a9-8015e575cfcc",
+              "name": "Linkedin Search URL ",
+              "value": "https://www.linkedin.com/jobs/search/?currentJobId=3803765259&f_E=2&f_TPR=r86400&geoId=105178154&keywords=project%20coordinator&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        224,
+        -1200
+      ],
+      "id": "41cf4fa9-22f6-4ff8-afe8-d2777fab38cb",
+      "name": "Job Search URL Project Coordinator",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "66910420-ba40-4dea-89a9-8015e575cfcc",
+              "name": "Linkedin Search URL",
+              "value": "https://www.linkedin.com/jobs/search/?currentJobId=4387713962&f_E=2&f_TPR=r86400&geoId=105178154&keywords=junior%20business%20analyst&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        224,
+        464
+      ],
+      "id": "e4e53c07-4421-4a46-8741-0ef81fefb22b",
+      "name": "Job Search Junior Business Analyst",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0",
+          "mode": "list",
+          "cachedResultName": "JOBS TRACKER DB",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Job Post Link": "={{ $('Scrape Jobs6').item.json.link }}",
+            "Job Title": "={{ $('Scrape Jobs6').item.json.title }}",
+            "Company Name": "={{ $('Scrape Jobs6').item.json.companyName }}",
+            "Salary": "={{ $('Scrape Jobs6').item.json.salaryInfo[0] }}",
+            "Seniority level": "={{ $('Scrape Jobs6').item.json.seniorityLevel }}",
+            "Company Website": "={{ $('Scrape Jobs6').item.json.companyLinkedinUrl }}",
+            "Description": "={{ $('Scrape Jobs6').item.json.descriptionText }}",
+            "No. of Applicants": "={{ $('Scrape Jobs6').item.json.applicantsCount }}",
+            "Resume URL": "=https://docs.google.com/document/d/{{ $('Create a document6').item.json.id }}/edit",
+            "Application URL": "={{ $('Scrape Jobs6').item.json.applyUrl }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Job Post Link",
+              "displayName": "Job Post Link",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Job Title",
+              "displayName": "Job Title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Seniority level",
+              "displayName": "Seniority level",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Name",
+              "displayName": "Company Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Website",
+              "displayName": "Company Website",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Salary",
+              "displayName": "Salary",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Description",
+              "displayName": "Description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "No. of Applicants",
+              "displayName": "No. of Applicants",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Resume URL",
+              "displayName": "Resume URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Application URL",
+              "displayName": "Application URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        2144,
+        1264
+      ],
+      "id": "6b95bc0c-a6c5-4330-83fe-baca8c52c23f",
+      "name": "Append row in sheet6",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "awLdV2adqENKgGuU",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0",
+          "mode": "list",
+          "cachedResultName": "JOBS TRACKER DB",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Job Post Link": "={{ $('Scrape Jobs4').item.json.link }}",
+            "Job Title": "={{ $('Scrape Jobs4').item.json.title }}",
+            "Company Name": "={{ $('Scrape Jobs4').item.json.companyName }}",
+            "Salary": "={{ $('Scrape Jobs4').item.json.salaryInfo[0] }}",
+            "Seniority level": "={{ $('Scrape Jobs4').item.json.seniorityLevel }}",
+            "Company Website": "={{ $('Scrape Jobs4').item.json.companyLinkedinUrl }}",
+            "Description": "={{ $('Scrape Jobs4').item.json.descriptionText }}",
+            "No. of Applicants": "={{ $('Scrape Jobs4').item.json.applicantsCount }}",
+            "Resume URL": "=https://docs.google.com/document/d/{{ $('Create a document5').item.json.id }}/edit",
+            "Application URL": "={{ $('Scrape Jobs4').item.json.applyUrl }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Job Post Link",
+              "displayName": "Job Post Link",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Job Title",
+              "displayName": "Job Title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Seniority level",
+              "displayName": "Seniority level",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Name",
+              "displayName": "Company Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Website",
+              "displayName": "Company Website",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Salary",
+              "displayName": "Salary",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Description",
+              "displayName": "Description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "No. of Applicants",
+              "displayName": "No. of Applicants",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Resume URL",
+              "displayName": "Resume URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Application URL",
+              "displayName": "Application URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        2160,
+        816
+      ],
+      "id": "2b79e0f6-53fe-476f-bfc2-68a449658392",
+      "name": "Append row in sheet5",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "awLdV2adqENKgGuU",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0",
+          "mode": "list",
+          "cachedResultName": "JOBS TRACKER DB",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Job Post Link": "={{ $('Scrape Jobs2').item.json.link }}",
+            "Job Title": "={{ $('Scrape Jobs2').item.json.title }}",
+            "Company Name": "={{ $('Scrape Jobs2').item.json.companyName }}",
+            "Salary": "={{ $('Scrape Jobs2').item.json.salaryInfo[0] }}",
+            "Seniority level": "={{ $('Scrape Jobs2').item.json.seniorityLevel }}",
+            "Company Website": "={{ $('Scrape Jobs2').item.json.companyLinkedinUrl }}",
+            "Description": "={{ $('Scrape Jobs2').item.json.descriptionText }}",
+            "No. of Applicants": "={{ $('Scrape Jobs2').item.json.applicantsCount }}",
+            "Resume URL": "=https://docs.google.com/document/d/{{ $('Create a document4').item.json.id }}/edit",
+            "Application URL": "={{ $('Scrape Jobs2').item.json.applyUrl }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Job Post Link",
+              "displayName": "Job Post Link",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Job Title",
+              "displayName": "Job Title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Seniority level",
+              "displayName": "Seniority level",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Name",
+              "displayName": "Company Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Website",
+              "displayName": "Company Website",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Salary",
+              "displayName": "Salary",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Description",
+              "displayName": "Description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "No. of Applicants",
+              "displayName": "No. of Applicants",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Resume URL",
+              "displayName": "Resume URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Application URL",
+              "displayName": "Application URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        2160,
+        304
+      ],
+      "id": "455897f1-6607-4ad5-8141-db0375ad870a",
+      "name": "Append row in sheet4",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "awLdV2adqENKgGuU",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0",
+          "mode": "list",
+          "cachedResultName": "JOBS TRACKER DB",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Job Post Link": "={{ $('Scrape Jobs').item.json.link }}",
+            "Job Title": "={{ $('Scrape Jobs').item.json.title }}",
+            "Company Name": "={{ $('Scrape Jobs').item.json.companyName }}",
+            "Salary": "={{ $('Scrape Jobs').item.json.salaryInfo[0] }}",
+            "Seniority level": "={{ $('Scrape Jobs').item.json.seniorityLevel }}",
+            "Company Website": "={{ $('Scrape Jobs').item.json.companyLinkedinUrl }}",
+            "Description": "={{ $('Scrape Jobs').item.json.descriptionText }}",
+            "No. of Applicants": "={{ $('Scrape Jobs').item.json.applicantsCount }}",
+            "Resume URL": "=https://docs.google.com/document/d/{{ $('Create a document3').item.json.id }}/edit",
+            "Application URL": "={{ $('Scrape Jobs').item.json.applyUrl }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Job Post Link",
+              "displayName": "Job Post Link",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Job Title",
+              "displayName": "Job Title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Seniority level",
+              "displayName": "Seniority level",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Name",
+              "displayName": "Company Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Website",
+              "displayName": "Company Website",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Salary",
+              "displayName": "Salary",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Description",
+              "displayName": "Description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "No. of Applicants",
+              "displayName": "No. of Applicants",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Resume URL",
+              "displayName": "Resume URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Application URL",
+              "displayName": "Application URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        2176,
+        -160
+      ],
+      "id": "01a4c6f2-c593-44fd-a7d5-13c976ad1250",
+      "name": "Append row in sheet3",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "awLdV2adqENKgGuU",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0",
+          "mode": "list",
+          "cachedResultName": "JOBS TRACKER DB",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Job Post Link": "={{ $('Scrape Jobs1').item.json.link }}",
+            "Job Title": "={{ $('Scrape Jobs1').item.json.title }}",
+            "Company Name": "={{ $('Scrape Jobs1').item.json.companyName }}",
+            "Salary": "={{ $('Scrape Jobs1').item.json.salaryInfo[0] }}",
+            "Seniority level": "={{ $('Scrape Jobs1').item.json.seniorityLevel }}",
+            "Company Website": "={{ $('Scrape Jobs1').item.json.companyLinkedinUrl }}",
+            "Description": "={{ $('Scrape Jobs1').item.json.descriptionText }}",
+            "No. of Applicants": "={{ $('Scrape Jobs1').item.json.applicantsCount }}",
+            "Resume URL": "=https://docs.google.com/document/d/{{ $('Create a document2').item.json.id }}/edit",
+            "Application URL": "={{ $('Scrape Jobs1').item.json.applyUrl }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Job Post Link",
+              "displayName": "Job Post Link",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Job Title",
+              "displayName": "Job Title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Seniority level",
+              "displayName": "Seniority level",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Name",
+              "displayName": "Company Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Website",
+              "displayName": "Company Website",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Salary",
+              "displayName": "Salary",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Description",
+              "displayName": "Description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "No. of Applicants",
+              "displayName": "No. of Applicants",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Resume URL",
+              "displayName": "Resume URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Application URL",
+              "displayName": "Application URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        2176,
+        -592
+      ],
+      "id": "fa43793f-b079-4ebc-b0cd-23520a7579e6",
+      "name": "Append row in sheet2",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "awLdV2adqENKgGuU",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0",
+          "mode": "list",
+          "cachedResultName": "JOBS TRACKER DB",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kKgIUqAGe0wqHPQpqBgYgOly_jO1eEXuiWT9Mu_uqu0/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Job Post Link": "={{ $('Scrape Jobs3').item.json.link }}",
+            "Job Title": "={{ $('Scrape Jobs3').item.json.title }}",
+            "Company Name": "={{ $('Scrape Jobs3').item.json.companyName }}",
+            "Salary": "={{ $('Scrape Jobs3').item.json.salaryInfo[0] }}",
+            "Seniority level": "={{ $('Scrape Jobs3').item.json.seniorityLevel }}",
+            "Company Website": "={{ $('Scrape Jobs3').item.json.companyLinkedinUrl }}",
+            "Description": "={{ $('Scrape Jobs3').item.json.descriptionText }}",
+            "No. of Applicants": "={{ $('Scrape Jobs3').item.json.applicantsCount }}",
+            "Resume URL": "=https://docs.google.com/document/d/{{ $('Create a document1').item.json.id }}/edit",
+            "Application URL": "={{ $('Scrape Jobs3').item.json.applyUrl }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Job Post Link",
+              "displayName": "Job Post Link",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Job Title",
+              "displayName": "Job Title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Seniority level",
+              "displayName": "Seniority level",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Name",
+              "displayName": "Company Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company Website",
+              "displayName": "Company Website",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Salary",
+              "displayName": "Salary",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Description",
+              "displayName": "Description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "No. of Applicants",
+              "displayName": "No. of Applicants",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Resume URL",
+              "displayName": "Resume URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Application URL",
+              "displayName": "Application URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        2176,
+        -976
+      ],
+      "id": "f26732ee-439e-413f-a65b-3187569a5ad6",
+      "name": "Append row in sheet1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "awLdV2adqENKgGuU",
+          "name": "Google Sheets account 2"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Job Search URL Opperations coordinator",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Job Search Junior Business Analyst",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Job Search URL project support officer",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Job Search URL Implementation coordinator",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Job Search URL Analyst",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Job Search URL Junior Project Manager",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Job Search URL Project Coordinator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Scrape Jobs": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Scrape Jobs1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Scrape Jobs2": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Scrape Jobs3": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Scrape Jobs4": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Job Search URL Analyst": {
+      "main": [
+        [
+          {
+            "node": "Scrape Jobs1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Job Search URL Junior Project Manager": {
+      "main": [
+        [
+          {
+            "node": "Scrape Jobs3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Job Search URL project support officer": {
+      "main": [
+        [
+          {
+            "node": "Scrape Jobs4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items5": {
+      "main": [
+        [
+          {
+            "node": "Filter5",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get CV5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get CV5": {
+      "main": [
+        [
+          {
+            "node": "checks relavence5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript5": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "checks relavence5": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Scrape Jobs6": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Job Search URL Implementation coordinator": {
+      "main": [
+        [
+          {
+            "node": "Scrape Jobs6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter5": {
+      "main": [
+        [
+          {
+            "node": "customise resume",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "customise resume": {
+      "main": [
+        [
+          {
+            "node": "Create a document",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a document": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [
+          {
+            "node": "Filter",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get CV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get CV": {
+      "main": [
+        [
+          {
+            "node": "checks relavence",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "checks relavence": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter": {
+      "main": [
+        [
+          {
+            "node": "customise resume1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "customise resume1": {
+      "main": [
+        [
+          {
+            "node": "Create a document1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a document1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items6": {
+      "main": [
+        [
+          {
+            "node": "Filter6",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get CV6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get CV6": {
+      "main": [
+        [
+          {
+            "node": "checks relavence6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript6": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "checks relavence6": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter6": {
+      "main": [
+        [
+          {
+            "node": "customise resume2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "customise resume2": {
+      "main": [
+        [
+          {
+            "node": "Create a document2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a document2": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request2": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items7": {
+      "main": [
+        [
+          {
+            "node": "Filter7",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get CV7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get CV7": {
+      "main": [
+        [
+          {
+            "node": "checks relavence7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript7": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "checks relavence7": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter7": {
+      "main": [
+        [
+          {
+            "node": "customise resume3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "customise resume3": {
+      "main": [
+        [
+          {
+            "node": "Create a document3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a document3": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request3": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items8": {
+      "main": [
+        [
+          {
+            "node": "Filter8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get CV8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get CV8": {
+      "main": [
+        [
+          {
+            "node": "checks relavence8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript8": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "checks relavence8": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter8": {
+      "main": [
+        [
+          {
+            "node": "customise resume4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "customise resume4": {
+      "main": [
+        [
+          {
+            "node": "Create a document4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a document4": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request4": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items9": {
+      "main": [
+        [
+          {
+            "node": "Filter9",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get CV9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get CV9": {
+      "main": [
+        [
+          {
+            "node": "checks relavence9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript9": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "checks relavence9": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter9": {
+      "main": [
+        [
+          {
+            "node": "customise resume5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "customise resume5": {
+      "main": [
+        [
+          {
+            "node": "Create a document5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a document5": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request5": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items10": {
+      "main": [
+        [
+          {
+            "node": "Filter10",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get CV10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get CV10": {
+      "main": [
+        [
+          {
+            "node": "checks relavence10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript10": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "checks relavence10": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter10": {
+      "main": [
+        [
+          {
+            "node": "customise resume6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "customise resume6": {
+      "main": [
+        [
+          {
+            "node": "Create a document6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a document6": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request6": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Scrape Jobs7": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Job Search URL Opperations coordinator": {
+      "main": [
+        [
+          {
+            "node": "Scrape Jobs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Job Search URL Project Coordinator": {
+      "main": [
+        [
+          {
+            "node": "Scrape Jobs7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Job Search Junior Business Analyst": {
+      "main": [
+        [
+          {
+            "node": "Scrape Jobs2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "fe05ac7a-80c7-47e4-9906-a095d8ec5fb9",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "8d179d22b315bdb7cd0b5447d1a13e5f46d194fb5f596425473b6a98f98363d4"
+  },
+  "id": "O5q3FdaKAwyG6El7",
+  "tags": []
+}
