@@ -1,33 +1,80 @@
 # Job Search Automation 🤖
 
-An n8n workflow that automates LinkedIn job discovery, AI-powered relevance filtering, and structured tracking - built to eliminate manual job searching and ensure no relevant opportunities are missed.
+A sophisticated 78-node n8n workflow that automates the entire job search pipeline - from LinkedIn discovery to AI relevance scoring, automatic CV customisation per company, and structured tracking in Google Sheets.
 
-## What It Does
+## What It Actually Does
 
-- Scrapes LinkedIn job listings automatically using an Apify Actor
-- Uses AI to assess the relevance of each role based on predefined criteria such as job title, skills, and location
-- Filters out irrelevant listings before they ever reach you
-- Outputs structured, organised results directly into a Google Sheet for easy tracking and management
-- Reduces hours of manual job searching to a fully automated, intelligent pipeline
+This is not a simple job scraper. It is a fully automated, AI-powered recruitment pipeline that handles every stage of the job search process without manual intervention.
+
+### Stage 1 - Multi-Role Job Discovery
+The workflow runs parallel searches across 7 distinct job roles simultaneously:
+- Business Analyst
+- Junior Project Manager
+- Analyst
+- Project Support Officer
+- Implementation Coordinator
+- Operations Coordinator
+- Project Coordinator
+
+Each role has its own dedicated LinkedIn search URL, feeding into 8 separate Apify Actor instances that scrape up to 100 job listings per search, filtered specifically to Ireland (IE).
+
+### Stage 2 - AI Relevance Scoring
+Every scraped job listing is passed through an OpenAI LLM that:
+- Reads the full job description
+- Compares it against a live version of my CV (fetched directly from Google Docs)
+- Assesses relevance based on skills, experience, and job title alignment
+- Returns a structured relevance score
+- Filters out irrelevant roles automatically using conditional logic
+
+### Stage 3 - Automatic CV Customisation
+For every role that passes the relevance filter, the workflow:
+- Fetches the latest version of my master CV from Google Docs
+- Passes it to OpenAI with the specific job description
+- Generates a tailored, company-specific CV automatically
+- Creates a new Google Doc named `SaiSachatDadi_Cv_[CompanyName]`
+- Uploads the customised CV content via Google Drive API
+
+### Stage 4 - Structured Tracking
+All relevant jobs and their details are appended to a Google Sheet for organised tracking, giving a clean overview of every opportunity discovered, scored, and acted upon.
 
 ## Why I Built This
 
-During my job search, I realised the process of discovering, filtering, and tracking applications was highly repetitive and time-consuming. Rather than accepting that inefficiency, I built this workflow to automate the entire discovery pipeline - freeing up time to focus on tailoring applications and preparing for interviews.
+During my job search, I realised that discovering, filtering, and applying to relevant roles was an enormously time-consuming manual process. Rather than accepting that inefficiency, I built this end-to-end pipeline to handle discovery, relevance assessment, and CV customisation automatically - freeing me up to focus entirely on tailoring cover letters, preparing for interviews, and engaging with hiring managers.
+
+This workflow processes hundreds of job listings per run and produces job-specific CVs in minutes - a process that would otherwise take days of manual effort.
 
 ## Tech Stack
 
-- **n8n** - Workflow automation platform
-- **Apify** - LinkedIn job scraping via Apify Actor
-- **AI (LLM)** - Relevance scoring and filtering of job listings
-- **Google Sheets** - Structured output and application tracking
-- **JSON** - Workflow export format
+- **n8n** - Workflow orchestration platform (78 nodes)
+- **Apify** - LinkedIn job scraping via Apify Actor (8 parallel instances, up to 100 jobs each)
+- **OpenAI (LLM)** - AI relevance scoring and CV customisation
+- **Google Docs API** - Live CV fetching and tailored CV generation
+- **Google Drive API** - Automated CV file creation and upload
+- **Google Sheets** - Structured job tracking and pipeline management
+- **JavaScript** - Custom data transformation nodes
+
+## Workflow Architecture
+
+***Trigger
+└── 7 Parallel Job Search URL Nodes (by role)
+└── 8 Apify Scrape Actors (up to 100 jobs each)
+└── Loop Over Items (batch processing)
+└── Fetch CV from Google Docs
+└── AI Relevance Check (OpenAI)
+└── Filter (relevant only)
+└── AI CV Customisation (OpenAI)
+└── Create Google Doc
+└── Upload via Drive API
+└── Append to Google Sheets***
 
 ## How to Use
 
 1. Import `Linkedin Job Scraper.json` into your n8n instance
-2. Set up your Apify API key and configure your LinkedIn search parameters
-3. Connect your Google Sheets account and target spreadsheet
-4. Run the workflow and let it handle discovery, filtering, and tracking automatically
+2. Connect your Apify account and configure LinkedIn search URLs for your target roles
+3. Link your OpenAI API key for relevance scoring and CV customisation
+4. Connect your Google account (Docs, Drive, Sheets)
+5. Add your master CV to Google Docs and update the document URL in the workflow
+6. Run the workflow and let it handle the rest
 
 ## About Me
 
