@@ -31,9 +31,9 @@ All relevant jobs and their details are appended to a Google Sheet for organised
 
 ## Why I Built This
 
-During my job search, I realised that discovering, filtering, and applying to relevant roles was an enormously time-consuming manual process. Rather than accepting that inefficiency, I built this end-to-end pipeline to handle discovery, relevance assessment, and CV customisation automatically - freeing me up to focus entirely on tailoring cover letters, preparing for interviews, and engaging with hiring managers.
+During my job search, I realised that discovering, filtering, and applying to relevant roles was an enormously time-consuming manual process. Rather than accepting that inefficiency, I built this end-to-end pipeline to handle discovery, relevance assessment, and Google Docs appending - freeing me up to focus entirely on tailoring cover letters, preparing for interviews, and engaging with hiring managers.
 
-This workflow processes hundreds of job listings per run and produces job-specific CVs in minutes - a process that would otherwise take days of manual effort.
+This workflow processes hundreds of job listings per run and produces relavant job-postings in minutes - a process that would otherwise take days of manual effort.
 
 ## Tech Stack
 
@@ -50,7 +50,7 @@ This workflow processes hundreds of job listings per run and produces job-specif
 └── 7 Parallel Job Search URL Nodes (by role)
 └── 8 Apify Scrape Actors (up to 100 jobs each)
 └── Loop Over Items (batch processing)
-└── Fetch CV from Google Docs
+└── Fetch base CV from Google Docs
 └── AI Relevance Check (OpenAI)
 └── Filter (relevant only)
 └── Upload via Drive API
@@ -60,7 +60,7 @@ This workflow processes hundreds of job listings per run and produces job-specif
 
 1. Import `Linkedin Job Scraper.json` into your n8n instance
 2. Connect your Apify account and configure LinkedIn search URLs for your target roles
-3. Link your OpenAI API key for relevance scoring and CV customisation
+3. Link your OpenAI API key for relevance scoring
 4. Connect your Google account (Docs, Drive, Sheets)
 5. Add your master CV to Google Docs and update the document URL in the workflow
 6. Run the workflow and let it handle the rest
