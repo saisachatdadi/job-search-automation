@@ -1,6 +1,6 @@
 # Job Search Automation 🤖
 
-A sophisticated 78-node n8n workflow that automates the entire job search pipeline - from LinkedIn discovery to AI relevance scoring, automatic CV customisation per company, and structured tracking in Google Sheets.
+A sophisticated 78-node n8n workflow that automates the entire job search pipeline - from LinkedIn discovery to AI relevance scoring, and structured tracking in Google Sheets.
 
 ## What It Actually Does
 
@@ -26,15 +26,7 @@ Every scraped job listing is passed through an OpenAI LLM that:
 - Returns a structured relevance score
 - Filters out irrelevant roles automatically using conditional logic
 
-### Stage 3 - Automatic CV Customisation
-For every role that passes the relevance filter, the workflow:
-- Fetches the latest version of my master CV from Google Docs
-- Passes it to OpenAI with the specific job description
-- Generates a tailored, company-specific CV automatically
-- Creates a new Google Doc named `SaiSachatDadi_Cv_[CompanyName]`
-- Uploads the customised CV content via Google Drive API
-
-### Stage 4 - Structured Tracking
+### Stage 3 - Structured Tracking
 All relevant jobs and their details are appended to a Google Sheet for organised tracking, giving a clean overview of every opportunity discovered, scored, and acted upon.
 
 ## Why I Built This
@@ -47,9 +39,8 @@ This workflow processes hundreds of job listings per run and produces job-specif
 
 - **n8n** - Workflow orchestration platform (78 nodes)
 - **Apify** - LinkedIn job scraping via Apify Actor (8 parallel instances, up to 100 jobs each)
-- **OpenAI (LLM)** - AI relevance scoring and CV customisation
-- **Google Docs API** - Live CV fetching and tailored CV generation
-- **Google Drive API** - Automated CV file creation and upload
+- **OpenAI (LLM)** - AI relevance scoring.
+- **Google Docs API** - Live CV fetching.
 - **Google Sheets** - Structured job tracking and pipeline management
 - **JavaScript** - Custom data transformation nodes
 
@@ -62,8 +53,6 @@ This workflow processes hundreds of job listings per run and produces job-specif
 └── Fetch CV from Google Docs
 └── AI Relevance Check (OpenAI)
 └── Filter (relevant only)
-└── AI CV Customisation (OpenAI)
-└── Create Google Doc
 └── Upload via Drive API
 └── Append to Google Sheets***
 
@@ -78,6 +67,6 @@ This workflow processes hundreds of job listings per run and produces job-specif
 
 ## About Me
 
-MSc Business Analytics graduate passionate about automation, AI, and building tools that solve real problems.
+MSc Business Analytics graduate passionate about automation, Project Coordination, AI, and building tools that solve real problems.
 
 🔗 [EaSi Analytics](https://github.com/saisachatdadi/EaSi-Analytics) - My intelligent self-adaptive analytics platform
